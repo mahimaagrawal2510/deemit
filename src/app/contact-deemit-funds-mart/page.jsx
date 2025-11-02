@@ -15,7 +15,7 @@ export default function Contactus(){
             [e.target.name]: e.target.value,  
           })
           console.log("formset");
-         
+         console.log("deemit");
     }
 
     const sendMessage = async (e) => {
