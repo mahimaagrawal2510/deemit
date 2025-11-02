@@ -59,7 +59,7 @@ export default function Contactus(){
     <div onClick={popupupHendler} className="absolute top-[-12px] right-[-12px] font-bold text-2xl"><FontAwesomeIcon icon={faXmark} className="cursor-pointer" /></div>
       <div className="flex flex-col gap-6 text-2xl items-center">
       <FontAwesomeIcon icon={faMessage} className="text-5xl text-blue-800"/>
-        <p>Message sent. Thank you for contacting us.</p></div>
+        <p>Message sent successfully. Thank you for contacting us.</p></div>
         </div>
         </div>
     </div>}
