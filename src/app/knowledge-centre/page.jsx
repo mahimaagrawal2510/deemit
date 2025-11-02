@@ -6,7 +6,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {data} from "./data.js";
 import { faPaperPlane} from "@fortawesome/free-solid-svg-icons";
 export default function KnowledgeCenter(){
-    console.log(data, "data")
 
 
     return (

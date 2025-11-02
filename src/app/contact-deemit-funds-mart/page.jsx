@@ -15,16 +15,12 @@ export default function Contactus(){
             [e.target.name]: e.target.value,  
           })
 
-          console.log({
-            ...formData,               
-            [e.target.name]: e.target.value,  
-          }, "u d")
+         
     }
 
     const sendMessage = async (e) => {
         setIsLoading(true)
         e.preventDefault();
-        console.log(formData)
         try {
             const res = await fetch("/api/send-email", {
                 method: "POST",
@@ -33,7 +29,6 @@ export default function Contactus(){
               });
           
               const data = await res.json();
-              console.log(data);
             if (res.ok) {
                 setStatus("Message sent successfully!");
                 
@@ -42,7 +37,6 @@ export default function Contactus(){
               }
               setIsLoading(false)
         }catch(err){
-            console.error(err);
             setStatus("An error occurred. Please try again.");
             setIsLoading(false)
         }
