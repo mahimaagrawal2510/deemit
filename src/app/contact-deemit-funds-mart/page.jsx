@@ -14,12 +14,12 @@ export default function Contactus(){
             ...formData,                
             [e.target.name]: e.target.value,  
           })
-          console.log("form")
+          console.log("formset");
          
     }
 
     const sendMessage = async (e) => {
-        setIsLoading(true)
+        setIsLoading(true);
         e.preventDefault();
         try {
             const res = await fetch("/api/send-email", {
